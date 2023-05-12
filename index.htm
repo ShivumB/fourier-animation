@@ -20,7 +20,7 @@ https://github.com/Team-Code/KA_Offline -->
  <script>
     var sketchProc = function(processingInstance) {
      with (processingInstance) {
-        size(600, 600); 
+        size(1200, 600); 
         frameRate(60);
         
 //Made by Shivum Banerjee, 17 Jan 2021     
@@ -29,19 +29,19 @@ https://github.com/Team-Code/KA_Offline -->
 angleMode = "radians";
 
 scale(1,-1);
-translate(300,-300);
+translate(600,-300);
 
 background(0,255,255,100);
 strokeWeight(0.5);
 stroke(0, 0, 0);
-for(var i = -300; i < 300; i += 20) {
-    line(i,-300,i,300);
-    line(-300,i,300,i);
+for(var i = -600; i < 600; i += 20) {
+    line(i,-600,i,600);
+    line(-600,i,600,i);
 }
 
 strokeWeight(3);
-line(-300,0,300,0);
-line(0,-300,0,300);
+line(-600,0,600,0);
+line(0,-600,0,600);
 
 var comNum = function(a,b) {
     this.a = a;
@@ -304,13 +304,13 @@ draw = function() {
         background(0,255,255,100);
         strokeWeight(0.5);
         stroke(0, 0, 0);
-        for(var i = -300; i < 300; i += 20) {
-            line(i,-300,i,300);
-            line(-300,i,300,i);
+        for(var i = -600; i < 600; i += 20) {
+            line(i,-600,i,600);
+            line(-600,i,600,i);
         }
 
         strokeWeight(3);
-        line(-300,0,300,0);
+        line(-600,0,600,0);
         line(0,-300,0,300);
         
         strokeWeight(2);
@@ -327,13 +327,13 @@ draw = function() {
         background(0,255,255,100);
         strokeWeight(0.5);
         stroke(0, 0, 0);
-        for(var i = -300; i < 300; i += 20) {
-            line(i,-300,i,300);
+        for(var i = -600; i < 600; i += 20) {
+            line(i,-600,i,600);
             line(-300,i,300,i);
         }
 
         strokeWeight(3);
-        line(-300,0,300,0);
+        line(-600,0,600,0);
         line(0,-300,0,300);
     
         noStroke();
